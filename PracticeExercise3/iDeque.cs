@@ -1,8 +1,19 @@
 ﻿using System;
 namespace PracticeExercise3
 {
-    public interface iDeque
+    public interface iDeque<T>
     {
+        void AddFront(T item);
+        void AddBack(T item);
+
+        T RemoveFront();
+        T RemoveBack();
+
+        bool IsEmpty { get; }
+        int Length { get; }
+
+        T Front { get; }
+        T Back { get; }
     }
 }
 

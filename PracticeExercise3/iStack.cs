@@ -1,11 +1,18 @@
 ﻿using System;
 namespace PracticeExercise3
 {
-    public class iStack
+    public interface iStack<T>
     {
-        public iStack()
-        {
-        }
+        void Push(T item);
+
+        T Pop();
+
+        T Peek();
+
+        bool IsEmpty { get; }
+
+        int Length{ get; }
+       
     }
 }
 
